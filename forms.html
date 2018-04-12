@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<link href="owo form.css" rel="stylesheet" />
+<title>ye</title>
+</head>
+
+<body>
+ <form name="DBZQuiz">
+  <fieldset>
+  <legend> James' Dragon Ball Z Quiz</legend>
+  <div>
+  <fieldset>
+  <legend> Question #1</legend>
+     <p>Who is the main character in "Dragon Ball Z"</p>
+     <input type="radio" name="DBZ" value="goku"/> Goku
+      <br />
+     <input type="radio" name="DBZ" value="trunks"/> Trunks
+     <br />
+     <input type="radio" name="DBZ" value="victor"/> Victor
+     <br />
+     <input type="radio" name="DBZ" value="zamasu"/> Zamasu
+     </fieldset>
+  </div>
+  <div>
+   <fieldset>
+    <legend> Question #2</legend>
+     <p>Which Forms did Goku Achieve?</p>
+     <input type="checkbox" name="q2a" value="ssj1"/> Super Saiyan
+      <br />
+     <input type="checkbox" name="q2b" value="ssj3"/> Super Saiyan 3
+     <br />
+     <input type="checkbox" name="q2c" value="kaiokenx10"/> Kaioken x10
+     <br />
+     <input type="checkbox" name="q2d" value="perfect"/> Perfect
+     </fieldset>
+   </div>
+   <div>
+    <fieldset>
+     <legend> Question #3</legend>
+     <p>Who did Picollo unite with on Planet Namek in the Frieza Saga?</p>
+     <select name="q3">
+       <option value="kami"> Kami </option>
+       <option value="nail"> Nail </option>
+       <option value="dende"> Dende </option>
+       <option value="shenron"> Shenron </option>
+      </select>
+       </fieldset>
+    </div>
+    <div>
+     <fieldset>
+      <legend> Question #4</legend>
+    <p>Who comes to the Present from the Future to warn Goku about the Androids?</p>
+    <input name="q4" type="text" placeholder="Answer here" />
+    </fieldset>
+    </div>
+     <fieldset>
+      <legend> Question #5</legend>
+      <p>What color is Goku's outfit?</p>
+      <input name="q5" type="color"/>
+      </fieldset>
+    </div>
+    <div>
+     <fieldset>
+      <legend> Question #6</legend>
+        	<p>Who is Gohan's kid?</p>
+            <input type="button" value="Pam" onclick="answerJ()"/>
+            <input type="button" value="Goten" onclick="answerT()"/>
+            <input type="button" value="Trunks" onclick="answerP()"/>
+            <input type="button" value="Yamcha" onclick="answerL()"/>
+         </fieldset>
+     </div>
+      <div>
+     <input type="submit" onclick="answerChecker()"/>
+    <div>
+ </form>
+ <script>
+ function answerChecker() {
+    if(document.DBZQuiz.DBZ.value==="goku") {
+		alert("Question 1 is correct!");
+	} else {
+		alert("Question 1 is incorrect!")
+	}
+	
+	if(document.DBZQuiz.q2a.checked===true && document.DBZQuiz.q2b.checked===true && document.DBZQuiz.q2c.checked===true && document.DBZQuiz.q2d.checked===false) {
+		alert("Yes, Goku has those transformations");
+	} else {
+		alert("No, Goku hasn't achieved those/he has achieved more")
+	}
+	
+	if(document.DBZQuiz.q3.value==="nail") {
+			alert("Yes, Picollo did unite with Nail");
+		} else {
+			alert("No, Picollo united with Nail");
+		}
+
+ if(document.DBZQuiz.q4.value==="Trunks") {
+		alert("Question 4 is correct!");
+	} else {
+		alert("Question 4 is incorrect!")
+	}
+	
+	if(document.DBZQuiz.q5.value==="#ff8000") {
+		
+		alert("Question 5 is correct!");
+	} else {
+		alert("Question 5 is incorrect!")
+	}
+		
+	}
+	function answerJ(){
+		alert("YES! You got it!");
+	}
+	function answerT(){
+		alert("Not at all");
+	}
+	function answerP(){
+		alert("Nope");
+	}
+	function answerL(){
+		alert("Nope");
+	
+ }
+ </script>
+ 
+ 
+</body>
+</html>

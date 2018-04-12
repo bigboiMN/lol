@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+fieldset {
+	border: 8px blue inset;
+	background-color:#F93;
+}
+legend {
+	color: blue;
+	font-size:18px;
+	text-align:center;
+}
+
